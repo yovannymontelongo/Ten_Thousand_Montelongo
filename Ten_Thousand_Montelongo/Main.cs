@@ -14,6 +14,7 @@ namespace Ten_Thousand_Montelongo {
 
         public Main() {
             InitializeComponent();
+            answerLabel.Visible = false;
         }
 
         private void Main_Load(object sender, EventArgs e) {
@@ -28,40 +29,56 @@ namespace Ten_Thousand_Montelongo {
 
         private void submitButton_Click(object sender, EventArgs e) {
 
-            float targetHours = 10000;
-
-            float.TryParse(sundayTextBox.Text, out float sunday);
-            float.TryParse(mondayTextBox.Text, out float monday);
-            float.TryParse(tuesdayTextBox.Text, out float tuesday);
-            float.TryParse(wednesdayTextBox.Text, out float wednesday);
-            float.TryParse(thursdayTextBox.Text, out float thursday);
-            float.TryParse(fridayTextBox.Text, out float friday);
-            float.TryParse(saturdayTextBox.Text, out float saturday);
-            float totalHours = sunday + monday + tuesday + wednesday + thursday + friday + saturday;
-            float hoursLeft = targetHours;
+            int targetHours = 10000;
+            int.TryParse(sundayTextBox.Text, out int sunday);
+            int.TryParse(mondayTextBox.Text, out int monday);
+            int.TryParse(tuesdayTextBox.Text, out int tuesday);
+            int.TryParse(wednesdayTextBox.Text, out int wednesday);
+            int.TryParse(thursdayTextBox.Text, out int thursday);
+            int.TryParse(fridayTextBox.Text, out int friday);
+            int.TryParse(saturdayTextBox.Text, out int saturday);
+            int totalHours = sunday + monday + tuesday + wednesday + thursday + friday + saturday;
+            int hoursLeft = targetHours;
             int iterations = 1;
-
-
+            bool possible = false;
 
             DateTime today = DateTime.Now;
-            TimeSpan oneWeek = new TimeSpan(totalHours, 0, 0);
+            DateTime answer = today;
+            TimeSpan oneWeek = new TimeSpan(7, 0, 0, 0);
 
-            do {
-
-                hoursLeft = hoursLeft - totalHours;
-                Console.WriteLine($"{iterations} : {hoursLeft}");
-
-                iterations++;
-
-            } while (hoursLeft >= 0);
-
-            for (int i = iterations; i == 0; i--) {
-                today.Add
+            if (sunday > 24 || monday > 24 || tuesday > 24 || wednesday > 24 || thursday > 24 || friday > 24 || saturday > 24) {
+                possible = false;
+                answerLabel.Visible = true;
+                answerLabel.Left = 1;
+                answerLabel.Text = "Umm, there aren't more than 24 hours in a day. Sorry about that, I'm not God.";
+            } else {
+                possible = true;
             }
 
-            //DateTime answer = today.Add(duration);
+            while (possible) {
+                do {
 
-            MessageBox.Show($"{iterations - 1} iterations");
+                    hoursLeft = hoursLeft - totalHours;
+                    //Console.WriteLine($"{iterations} : {hoursLeft}");
+
+                    iterations++;
+
+                } while (hoursLeft >= 0);
+
+                iterations--;
+                //MessageBox.Show($"{iterations} iterations");
+
+                for (int i = iterations; i >= 0; i--) {
+                    answer = answer.Add(oneWeek);
+                    //Console.WriteLine($"At this rate, you'll be a pro by {answer}");
+                }
+
+                //MessageBox.Show($"At this rate, you'll be a pro by {answer}");
+                answerLabel.Visible = true;
+                answerLabel.Left = 90;
+                answerLabel.Text = $"At this rate, you'll be a pro by {answer}";
+                break;
+            }
 
         }
     }

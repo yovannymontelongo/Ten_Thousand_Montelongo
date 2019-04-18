@@ -40,13 +40,14 @@
             this.fridayTextBox = new System.Windows.Forms.TextBox();
             this.saturdayTextBox = new System.Windows.Forms.TextBox();
             this.submitButton = new System.Windows.Forms.Button();
+            this.answerLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // titleLabel
             // 
             this.titleLabel.AutoSize = true;
             this.titleLabel.Font = new System.Drawing.Font("Modern No. 20", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLabel.Location = new System.Drawing.Point(114, 25);
+            this.titleLabel.Location = new System.Drawing.Point(112, 9);
             this.titleLabel.Name = "titleLabel";
             this.titleLabel.Size = new System.Drawing.Size(331, 36);
             this.titleLabel.TabIndex = 0;
@@ -56,7 +57,7 @@
             // 
             this.instructionsLabel.AutoSize = true;
             this.instructionsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.instructionsLabel.Location = new System.Drawing.Point(38, 84);
+            this.instructionsLabel.Location = new System.Drawing.Point(36, 45);
             this.instructionsLabel.Name = "instructionsLabel";
             this.instructionsLabel.Size = new System.Drawing.Size(482, 24);
             this.instructionsLabel.TabIndex = 1;
@@ -66,7 +67,7 @@
             // 
             this.sundayLabel.AutoSize = true;
             this.sundayLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sundayLabel.Location = new System.Drawing.Point(185, 127);
+            this.sundayLabel.Location = new System.Drawing.Point(172, 84);
             this.sundayLabel.Name = "sundayLabel";
             this.sundayLabel.Size = new System.Drawing.Size(91, 25);
             this.sundayLabel.TabIndex = 2;
@@ -76,7 +77,7 @@
             // 
             this.mondayLabel.AutoSize = true;
             this.mondayLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mondayLabel.Location = new System.Drawing.Point(181, 152);
+            this.mondayLabel.Location = new System.Drawing.Point(168, 109);
             this.mondayLabel.Name = "mondayLabel";
             this.mondayLabel.Size = new System.Drawing.Size(95, 25);
             this.mondayLabel.TabIndex = 3;
@@ -86,7 +87,7 @@
             // 
             this.tuesdayLabel.AutoSize = true;
             this.tuesdayLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tuesdayLabel.Location = new System.Drawing.Point(175, 177);
+            this.tuesdayLabel.Location = new System.Drawing.Point(162, 134);
             this.tuesdayLabel.Name = "tuesdayLabel";
             this.tuesdayLabel.Size = new System.Drawing.Size(101, 25);
             this.tuesdayLabel.TabIndex = 4;
@@ -96,7 +97,7 @@
             // 
             this.wednesdayLabel.AutoSize = true;
             this.wednesdayLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wednesdayLabel.Location = new System.Drawing.Point(144, 202);
+            this.wednesdayLabel.Location = new System.Drawing.Point(131, 159);
             this.wednesdayLabel.Name = "wednesdayLabel";
             this.wednesdayLabel.Size = new System.Drawing.Size(132, 25);
             this.wednesdayLabel.TabIndex = 5;
@@ -106,7 +107,7 @@
             // 
             this.thursdayLabel.AutoSize = true;
             this.thursdayLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.thursdayLabel.Location = new System.Drawing.Point(168, 227);
+            this.thursdayLabel.Location = new System.Drawing.Point(155, 184);
             this.thursdayLabel.Name = "thursdayLabel";
             this.thursdayLabel.Size = new System.Drawing.Size(108, 25);
             this.thursdayLabel.TabIndex = 6;
@@ -116,7 +117,7 @@
             // 
             this.fridayLabel.AutoSize = true;
             this.fridayLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fridayLabel.Location = new System.Drawing.Point(198, 252);
+            this.fridayLabel.Location = new System.Drawing.Point(185, 209);
             this.fridayLabel.Name = "fridayLabel";
             this.fridayLabel.Size = new System.Drawing.Size(78, 25);
             this.fridayLabel.TabIndex = 7;
@@ -126,7 +127,7 @@
             // 
             this.saturdayLabel.AutoSize = true;
             this.saturdayLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saturdayLabel.Location = new System.Drawing.Point(172, 277);
+            this.saturdayLabel.Location = new System.Drawing.Point(159, 234);
             this.saturdayLabel.Name = "saturdayLabel";
             this.saturdayLabel.Size = new System.Drawing.Size(104, 25);
             this.saturdayLabel.TabIndex = 8;
@@ -134,7 +135,7 @@
             // 
             // sundayTextBox
             // 
-            this.sundayTextBox.Location = new System.Drawing.Point(282, 133);
+            this.sundayTextBox.Location = new System.Drawing.Point(269, 90);
             this.sundayTextBox.MaxLength = 2;
             this.sundayTextBox.Name = "sundayTextBox";
             this.sundayTextBox.Size = new System.Drawing.Size(110, 20);
@@ -142,7 +143,7 @@
             // 
             // mondayTextBox
             // 
-            this.mondayTextBox.Location = new System.Drawing.Point(282, 158);
+            this.mondayTextBox.Location = new System.Drawing.Point(269, 115);
             this.mondayTextBox.MaxLength = 2;
             this.mondayTextBox.Name = "mondayTextBox";
             this.mondayTextBox.Size = new System.Drawing.Size(110, 20);
@@ -150,7 +151,7 @@
             // 
             // tuesdayTextBox
             // 
-            this.tuesdayTextBox.Location = new System.Drawing.Point(282, 183);
+            this.tuesdayTextBox.Location = new System.Drawing.Point(269, 140);
             this.tuesdayTextBox.MaxLength = 2;
             this.tuesdayTextBox.Name = "tuesdayTextBox";
             this.tuesdayTextBox.Size = new System.Drawing.Size(110, 20);
@@ -158,7 +159,7 @@
             // 
             // wednesdayTextBox
             // 
-            this.wednesdayTextBox.Location = new System.Drawing.Point(282, 208);
+            this.wednesdayTextBox.Location = new System.Drawing.Point(269, 165);
             this.wednesdayTextBox.MaxLength = 2;
             this.wednesdayTextBox.Name = "wednesdayTextBox";
             this.wednesdayTextBox.Size = new System.Drawing.Size(110, 20);
@@ -166,7 +167,7 @@
             // 
             // thursdayTextBox
             // 
-            this.thursdayTextBox.Location = new System.Drawing.Point(282, 233);
+            this.thursdayTextBox.Location = new System.Drawing.Point(269, 190);
             this.thursdayTextBox.MaxLength = 2;
             this.thursdayTextBox.Name = "thursdayTextBox";
             this.thursdayTextBox.Size = new System.Drawing.Size(110, 20);
@@ -174,7 +175,7 @@
             // 
             // fridayTextBox
             // 
-            this.fridayTextBox.Location = new System.Drawing.Point(282, 258);
+            this.fridayTextBox.Location = new System.Drawing.Point(269, 215);
             this.fridayTextBox.MaxLength = 2;
             this.fridayTextBox.Name = "fridayTextBox";
             this.fridayTextBox.Size = new System.Drawing.Size(110, 20);
@@ -182,7 +183,7 @@
             // 
             // saturdayTextBox
             // 
-            this.saturdayTextBox.Location = new System.Drawing.Point(282, 283);
+            this.saturdayTextBox.Location = new System.Drawing.Point(269, 240);
             this.saturdayTextBox.MaxLength = 2;
             this.saturdayTextBox.Name = "saturdayTextBox";
             this.saturdayTextBox.Size = new System.Drawing.Size(110, 20);
@@ -190,7 +191,7 @@
             // 
             // submitButton
             // 
-            this.submitButton.Location = new System.Drawing.Point(242, 334);
+            this.submitButton.Location = new System.Drawing.Point(240, 330);
             this.submitButton.Name = "submitButton";
             this.submitButton.Size = new System.Drawing.Size(75, 23);
             this.submitButton.TabIndex = 8;
@@ -198,12 +199,23 @@
             this.submitButton.UseVisualStyleBackColor = true;
             this.submitButton.Click += new System.EventHandler(this.submitButton_Click);
             // 
+            // answerLabel
+            // 
+            this.answerLabel.AutoSize = true;
+            this.answerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.answerLabel.Location = new System.Drawing.Point(1, 284);
+            this.answerLabel.Name = "answerLabel";
+            this.answerLabel.Size = new System.Drawing.Size(553, 20);
+            this.answerLabel.TabIndex = 9;
+            this.answerLabel.Text = "Umm, there aren\'t more than 24 hours in a day. Sorry about that, I\'m not God.";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(554, 386);
+            this.Controls.Add(this.answerLabel);
             this.Controls.Add(this.submitButton);
             this.Controls.Add(this.saturdayTextBox);
             this.Controls.Add(this.fridayTextBox);
@@ -248,6 +260,7 @@
         private System.Windows.Forms.TextBox fridayTextBox;
         private System.Windows.Forms.TextBox saturdayTextBox;
         private System.Windows.Forms.Button submitButton;
+        private System.Windows.Forms.Label answerLabel;
     }
 }
 
